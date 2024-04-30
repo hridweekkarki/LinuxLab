@@ -29,7 +29,7 @@ def encryption(message, shift):
     encoded_text = []
 
     for char in characters:
-        char_ascii = ord(char)
+        #char_ascii = ord(char)
         new_ascii = char_ascii + shift
 
         if new_ascii > ord("Z"):
@@ -45,8 +45,8 @@ def encryption(message, shift):
     value = ''.join(encoded_text)
     return format_output(value)
 
-args = sys.argv
+#args = sys.argv
 
 for line in sys.stdin:
     result = encryption(line.strip(), int(args[1]))
-    sys.stdout.write(result)
+    #sys.stdout.write(result)
