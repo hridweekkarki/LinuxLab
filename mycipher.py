@@ -26,3 +26,5 @@ def encryption(message, shift):
 
     value = ''.join(encoded_text)
     return format_output(value)
+
+args = sys.argv
